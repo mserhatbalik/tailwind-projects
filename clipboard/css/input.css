@@ -8,6 +8,11 @@
     background-size: contain;
   }
 
+  .ficon:hover {
+    filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+      brightness(101%) contrast(94%);
+  }
+
   h3 {
     @apply text-dark-grayish-blue mb-8 text-4xl font-bold md:text-5xl;
   }
