@@ -31,6 +31,10 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  h5 {
+    @apply absolute bottom-4 w-52 px-6 duration-200 group-hover:scale-110 group-hover:text-black md:bottom-8 md:px-10;
+  }
 }
 
 @media (max-width: 576px) {
@@ -42,4 +46,13 @@
 
 @utility btn {
   @apply font-alata my-0 border-2 border-black px-10 py-2 font-bold tracking-widest uppercase hover:bg-black hover:text-white;
+}
+@utility item-container {
+  @apply flex w-full flex-col justify-between space-y-8 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+}
+@utility item {
+  @apply relative overflow-hidden md:w-1/4;
+}
+@utility item-gradient {
+  @apply absolute top-0 right-0 bottom-0 left-0 bg-linear-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
 }
