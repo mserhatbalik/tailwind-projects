@@ -31,7 +31,7 @@
 }
 
 @utility section-content {
-  @apply text-grayish-blue mx-auto max-w-3xl text-center text-xl leading-9;
+  @apply text-grayish-blue mx-auto max-w-3xl text-center leading-9;
 }
 
 @media (max-width: 576px) {
