@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-blue-50: oklch(97% 0.014 254.604);
     --color-gray-900: oklch(21% 0.034 264.665);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
@@ -21,6 +22,7 @@
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-bold: 700;
+    --tracking-widest: 0.3em;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-alata: "Alata";
@@ -202,6 +204,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-0 {
+    margin-block: calc(var(--spacing) * 0);
+  }
   .my-32 {
     margin-block: calc(var(--spacing) * 32);
   }
@@ -214,6 +219,9 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
   .mb-32 {
     margin-bottom: calc(var(--spacing) * 32);
   }
@@ -222,9 +230,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -238,12 +243,6 @@
   .max-w-md {
     max-width: var(--container-md);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -253,13 +252,15 @@
   .justify-between {
     justify-content: space-between;
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
+  .justify-center {
+    justify-content: center;
   }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .border-black {
+    border-color: var(--color-black);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -269,6 +270,12 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
@@ -293,6 +300,10 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
   .text-gray-900 {
     color: var(--color-gray-900);
   }
@@ -301,21 +312,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .group-hover\:border {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        border-style: var(--tw-border-style);
-        border-width: 1px;
-      }
-    }
   }
   .group-hover\:border-b {
     &:is(:where(.group):hover *) {
@@ -329,6 +325,20 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         border-color: var(--color-blue-50);
+      }
+    }
+  }
+  .hover\:bg-black {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-black);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
@@ -357,6 +367,11 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:block {
+    @media (width >= 768px) {
+      display: block;
+    }
+  }
   .md\:flex {
     @media (width >= 768px) {
       display: flex;
@@ -365,6 +380,11 @@
   .md\:flex-row {
     @media (width >= 768px) {
       flex-direction: row;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 768px) {
+      justify-content: space-between;
     }
   }
   .md\:space-x-8 {
@@ -389,11 +409,6 @@
   .md\:py-20 {
     @media (width >= 768px) {
       padding-block: calc(var(--spacing) * 20);
-    }
-  }
-  .md\:pl-2 {
-    @media (width >= 768px) {
-      padding-left: calc(var(--spacing) * 2);
     }
   }
   .md\:pl-20 {
@@ -441,10 +456,9 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
 }
 @property --tw-space-x-reverse {
   syntax: "*";
@@ -456,7 +470,7 @@
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
+      --tw-tracking: initial;
       --tw-space-x-reverse: 0;
     }
   }
