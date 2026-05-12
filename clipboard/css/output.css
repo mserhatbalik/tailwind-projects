@@ -177,6 +177,11 @@
   }
 }
 @layer utilities {
+  .section-container {
+    margin-inline: auto;
+    max-width: var(--container-6xl);
+    text-align: center;
+  }
   .mx-auto {
     margin-inline: auto;
   }
