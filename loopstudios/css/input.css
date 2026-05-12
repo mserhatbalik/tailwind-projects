@@ -39,3 +39,7 @@
     background-position: center;
   }
 }
+
+@utility btn {
+  @apply font-alata my-0 border-2 border-black px-10 py-2 font-bold tracking-widest uppercase hover:bg-black hover:text-white;
+}
