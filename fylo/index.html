@@ -1,12 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Fylo</title>
   </head>
-  <body>
-    <h1 class="text-4xl">Simple Tailwind Starter</h1>
+  <body class="dark:bg-dark-blue font-opensans dark:text-white">
+    <!-- Header -->
+    <header class="container mx-auto mt-10 h-40 px-6 text-center md:h-20">
+      <!-- Dynamic Logo -->
+      <div
+        class="bg-logo-light-mode dark:bg-logo-dark-mode top-10 left-10 mx-auto h-20 w-48 bg-no-repeat md:absolute md:mx-0"
+      ></div>
+    </header>
   </body>
 </html>
