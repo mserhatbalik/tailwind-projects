@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* 1. Reset and Overwrite Breakpoints */
+  /* This 'initial' line removes the default 2xl breakpoint to match the screenshot */
+  --breakpoint-*: initial;
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+
+  /* 2. Extend Colors (using kebab-case for CSS naming standards) */
+  --color-soft-blue: hsl(231 69% 60%);
+  --color-soft-red: hsl(0 94% 66%);
+  --color-grayish-blue: hsl(229 8% 60%);
+  --color-very-dark-blue: hsl(229 31% 21%);
+
+  /* This overrides the default font-sans utility */
+  --font-sans: "Rubik", sans-serif;
+}
