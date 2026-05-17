@@ -636,6 +636,11 @@
       width: calc(var(--spacing) * 20);
     }
   }
+  .md\:w-56 {
+    @media (width >= 768px) {
+      width: calc(var(--spacing) * 56);
+    }
+  }
   .md\:max-w-xl {
     @media (width >= 768px) {
       max-width: var(--container-xl);
