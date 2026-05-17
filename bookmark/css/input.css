@@ -20,3 +20,13 @@
   /* This overrides the default font-sans utility */
   --font-sans: "Rubik", sans-serif;
 }
+
+@media (min-width: 1020px) {
+  .bg-hero {
+    width: 2000px;
+    height: 300px;
+    left: 30%;
+
+    @apply bg-soft-blue absolute top-52 rounded-l-full;
+  }
+}

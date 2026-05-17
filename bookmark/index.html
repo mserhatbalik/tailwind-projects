@@ -6,7 +6,82 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Bookmark</title>
   </head>
-  <body>
-    <h1 class="text-4xl">Bookmark</h1>
+  <body class="overflow-x-hidden">
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Container For Nav Items -->
+      <div class="my-6 flex items-center justify-between space-x-20">
+        <!-- Logo -->
+        <div class="z-30">
+          <img src="images/logo-bookmark.svg" alt="" />
+        </div>
+
+        <!-- Menu Items -->
+        <div
+          class="text-grayish-blue hidden items-center space-x-10 uppercase md:flex"
+        >
+          <a href="#features" class="hover:text-soft-red tracking-widest"
+            >Features</a
+          >
+          <a href="#download" class="hover:text-soft-red tracking-widest"
+            >Download</a
+          >
+          <a href="#faq" class="hover:text-soft-red tracking-widest">FAQ</a>
+          <a
+            href=""
+            class="bg-soft-red border-soft-red hover:text-soft-red rounded-lg border-2 px-8 py-2 text-white shadow-md hover:bg-white"
+            >Login</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Container For Image & Content -->
+      <div class="mx-auto flex flex-col-reverse p-6 lg:mb-0 lg:flex-row">
+        <!-- Content -->
+        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+          <h1
+            class="text-center text-3xl font-semibold lg:text-left lg:text-6xl"
+          >
+            A Simple Bookmark Manager
+          </h1>
+
+          <p
+            class="mx-auto max-w-md text-center text-lg text-gray-400 lg:mx-0 lg:mt-0 lg:text-left lg:text-2xl"
+          >
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+
+          <!-- Buttons Container -->
+          <div
+            class="flex w-full items-center justify-center space-x-4 lg:justify-start"
+          >
+            <a
+              href=""
+              class="bg-soft-blue border-soft-blue hover:text-soft-blue rounded border-2 p-4 text-sm font-semibold text-white shadow-md hover:bg-white md:text-base"
+              >Get It On Chrome</a
+            >
+            <a
+              href=""
+              class="rounded border-2 border-gray-300 bg-gray-300 p-4 text-sm font-semibold text-black shadow-md hover:bg-white hover:text-gray-600 md:text-base"
+              >Get It On Firefox</a
+            >
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div class="bg-hero"></div>
+          <img
+            src="images/illustration-hero.svg"
+            alt=""
+            class="relative z-10 overflow-x-visible lg:top-24 xl:top-0"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
