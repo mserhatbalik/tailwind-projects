@@ -34,3 +34,8 @@
 /* Dark Mode Manual Toggle Configuration */
 /* Tailwind 4 uses the selector strategy by default if you use the 'dark' variant */
 @variant dark (&:where(.dark, .dark *));
+
+.ficon:hover {
+  filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+    brightness(105%) contrast(104%);
+}
