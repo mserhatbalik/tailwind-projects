@@ -562,6 +562,11 @@
       }
     }
   }
+  .group-focus\:max-h-60 {
+    &:is(:where(.group):focus *) {
+      max-height: calc(var(--spacing) * 60);
+    }
+  }
   .group-focus\:max-h-screen {
     &:is(:where(.group):focus *) {
       max-height: 100vh;
