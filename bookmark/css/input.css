@@ -45,3 +45,8 @@
 @utility bg-dots {
   background-image: url("../images/bg-dots.svg");
 }
+
+.ficon:hover {
+  filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
+    brightness(101%) contrast(96%);
+}
