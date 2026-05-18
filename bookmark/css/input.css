@@ -41,3 +41,7 @@
     @apply bg-soft-blue absolute top-60 rounded-r-full;
   }
 }
+
+@utility bg-dots {
+  background-image: url("../images/bg-dots.svg");
+}
