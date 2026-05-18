@@ -13,7 +13,7 @@
       <div class="my-6 flex items-center justify-between space-x-20">
         <!-- Logo -->
         <div class="z-30">
-          <img src="images/logo-bookmark.svg" alt="" />
+          <img src="images/logo-bookmark.svg" alt="" id="logo" />
         </div>
 
         <!-- Menu Items -->
@@ -32,6 +32,34 @@
             class="bg-soft-red border-soft-red hover:text-soft-red rounded-lg border-2 px-8 py-2 text-white shadow-md hover:bg-white"
             >Login</a
           >
+        </div>
+
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="hamburger z-30 block focus:outline-none md:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="bg-very-dark-blue fixed inset-0 z-20 hidden h-full min-h-screen w-full flex-col items-center divide-y divide-gray-500 self-end px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase opacity-90"
+      >
+        <div class="w-full py-3 text-center">
+          <a href="#features" class="hover:text-soft-red block">Features</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#download" class="hover:text-soft-red block">Download</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#faq" class="hover:text-soft-red block">FAQ</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#" class="hover:text-soft-red block">Login</a>
         </div>
       </div>
     </nav>
