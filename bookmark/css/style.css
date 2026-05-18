@@ -587,6 +587,25 @@
       color: var(--color-red-500);
     }
   }
+  .group-focus\:transition-all {
+    &:is(:where(.group):focus *) {
+      transition-property: all;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+  }
+  .group-focus\:duration-500 {
+    &:is(:where(.group):focus *) {
+      --tw-duration: 500ms;
+      transition-duration: 500ms;
+    }
+  }
+  .group-focus\:ease-in {
+    &:is(:where(.group):focus *) {
+      --tw-ease: var(--ease-in);
+      transition-timing-function: var(--ease-in);
+    }
+  }
   .hover\:border-2 {
     &:hover {
       @media (hover: hover) {
